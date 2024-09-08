@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="intro" class="intro">
+            <h1>Welcome to the Quiz</h1>
+            <p>The test consists of 10 questions and you have 10 minutes to complete it. Good luck!</p>
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+        <div id="quiz" class="quiz-container" style="display: none;">
+            <div class="question-section">
+                <h2 id="question-number"></h2>
+                <p id="question-text"></p>
+                <div id="options" class="options-container"></div>
+                <div class="navigation-buttons">
+                    <button id="prev" class="nav-button">Previous</button>
+                    <button id="next" class="nav-button">Next</button>
+                    <button id="submit" class="submit-button">Submit Quiz</button>
+                </div>
+                <p id="timer" class="timer">Time Left: 10:00</p>
+            </div>
+            <div class="status-section">
+                <div id="answered-status">0 Answered</div>
+                <div id="not-answered-status">10 Not Answered</div>
+                <div id="marked-status">0 Marked for Review</div>
+                <div id="question-numbers" class="question-numbers"></div>
+            </div>
+        </div>
+        <div id="results" class="results-modal" style="display: none;">
+            <h1>Quiz Results</h1>
+            <p id="results-text"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
